@@ -1,7 +1,15 @@
-import React from "react";
+import Advantages from "./components/Advantages";
+import NewsCard from "./components/NewsCard";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer"; 
 
-function page() {
-  return <div>page</div>;
+
+export default function Page() {
+  return (
+    <main className=" min-h-screen">
+      <Advantages />
+      <NewsCard />
+      <Contact />
+    </main>
+  );
 }
-
-export default page;
