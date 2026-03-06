@@ -1,3 +1,23 @@
 @import "tailwindcss";
-
 @plugin "daisyui";
+
+:root {
+  --brand-black: #000000;
+  --brand-gray: #2f2f2f;
+  --brand-gradient: linear-gradient(to bottom, #2f2f2f, #000000);
+}
+
+html, body{
+  height: 100vh;
+}
+
+html, body {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(47, 47, 47, 1));
+  color: white;
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-7xl px-6 md:px-12;
+  }
+}
